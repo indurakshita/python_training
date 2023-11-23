@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/homestyle.css')}}">
+<title>{% block title %}{% endblock %} - Flask Tutorial</title>
+</head>
+<body>
+    {% block body %}{% endblock %}
+    <script src="{{url_for('static',filename='java/script.js')}}"></script>
+</body>
+</html>

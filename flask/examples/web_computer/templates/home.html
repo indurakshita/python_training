@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+
+{% block title %} Home Page {% endblock %}
+
+{% block body %}
+<h1> Rakshita Computer Center </h1>
+<br>
+{% if is_home_course %}
+<h2>List of courses</h2>
+
+<ul>
+    {% for course in home_course %}
+    <li>{{course}}</li>
+    {% endfor %}
+
+</ul>
+{% else %}
+<p>Not log in</p>
+{% endif %}
+<!-- <img src="{{url_for('static',filename='css/computer1.png')}}" alt="computer"> -->
+{% endblock %}

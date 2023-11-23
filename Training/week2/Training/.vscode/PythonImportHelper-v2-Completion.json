@@ -1,0 +1,714 @@
+[
+    {
+        "label": "b",
+        "importPath": "operators",
+        "description": "operators",
+        "isExtraImport": true,
+        "detail": "operators",
+        "documentation": {}
+    },
+    {
+        "label": "ascii_uppercase",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "tldextract",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tldextract",
+        "description": "tldextract",
+        "detail": "tldextract",
+        "documentation": {}
+    },
+    {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "getsizeof",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "perf_counter",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "perf_counter",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "UPPERCASE",
+        "importPath": "variables_naming",
+        "description": "variables_naming",
+        "isExtraImport": true,
+        "detail": "variables_naming",
+        "documentation": {}
+    },
+    {
+        "label": "lst",
+        "kind": 5,
+        "importPath": "built-in-functions",
+        "description": "built-in-functions",
+        "peekOfCode": "lst = [\"albin\", \"indhu\", \"akash\", \"naga\"]\n# lst.insert(3, \"kannan\")\n# for i in range(len(lst)):\n#     if i < 3:\n#         print(lst[i])\n# count = 0\n# for i in lst:\n#     if count < 3:\n#         print(i)\n#         count += 1",
+        "detail": "built-in-functions",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "comprehensions",
+        "description": "comprehensions",
+        "peekOfCode": "numbers = list(range(1, 101))\n# Single Condition\n# odd = [i for i in numbers if i % 2 == 1]\n# even = [i for i in numbers if i % 2 == 0]\n# Multiple conditions\n# check = [f\"{i}=Odd\" if i % 2 == 1 else f\"{i}=Even\" if i % 2 == 0 else \"None\" for i in numbers]\n# print(check) 79\n# # dictionary comprhension\n# check = {idx:i for idx, i in enumerate(ascii_uppercase, start=1)}\n# print(check)",
+        "detail": "comprehensions",
+        "documentation": {}
+    },
+    {
+        "label": "odd",
+        "kind": 5,
+        "importPath": "comprehensions",
+        "description": "comprehensions",
+        "peekOfCode": "odd = {i for i in numbers if i % 2 == 1}\nprint(odd)\n# tup = (i for i in numbers if i % 2 == 0)\n# print(next(tup))\n# print(next(tup))\n# print(next(tup))\n# print(next(tup))\n# print(next(tup))\n# print(next(tup))",
+        "detail": "comprehensions",
+        "documentation": {}
+    },
+    {
+        "label": "sample",
+        "kind": 5,
+        "importPath": "dictionary_methods",
+        "description": "dictionary_methods",
+        "peekOfCode": "sample = {\n    'name': 'albin',\n    \"profession\": \"Python developer\",\n    \"age\": None,\n    \"address\":{\n            \"area\": \"vilankurichi\",\n            \"city\": \"Cimbatore\",\n            \"state\": \"Tamilnadu\",\n            \"pincode\": 641035\n        },",
+        "detail": "dictionary_methods",
+        "documentation": {}
+    },
+    {
+        "label": "filter_fruits1",
+        "kind": 2,
+        "importPath": "filter_method",
+        "description": "filter_method",
+        "peekOfCode": "def filter_fruits1(fruit):\n    return fruit[0].casefold() == \"p\"\ndef filter_fruits(fruit):\n    return len(fruit) >= 7\n# Recomended method\nfiltered = list(filter(filter_fruits, fruits))\n# print(filtered)\n# Not recomended logic\nfiltered1 = [ i for i in fruits if i[0].casefold() == \"p\" ]\n# print(filtered)",
+        "detail": "filter_method",
+        "documentation": {}
+    },
+    {
+        "label": "filter_fruits",
+        "kind": 2,
+        "importPath": "filter_method",
+        "description": "filter_method",
+        "peekOfCode": "def filter_fruits(fruit):\n    return len(fruit) >= 7\n# Recomended method\nfiltered = list(filter(filter_fruits, fruits))\n# print(filtered)\n# Not recomended logic\nfiltered1 = [ i for i in fruits if i[0].casefold() == \"p\" ]\n# print(filtered)\nfiltered = [ i if i[0].casefold() == \"p\" else \"Not p\" for i in fruits ]\n# print(filtered)",
+        "detail": "filter_method",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "filter_method",
+        "description": "filter_method",
+        "peekOfCode": "fruits = [\"apple\", \"orange\", \"raspberry\", \"pineapple\", \"mango\", \"banana\", \"pomegreanate\", \"grapes\"]\nages = [\n    {\n        \"name\": \"albin\",\n        \"age\": 15\n    },\n    {\n        \"name\": \"akash\",\n        \"age\": 17\n    },",
+        "detail": "filter_method",
+        "documentation": {}
+    },
+    {
+        "label": "ages",
+        "kind": 5,
+        "importPath": "filter_method",
+        "description": "filter_method",
+        "peekOfCode": "ages = [\n    {\n        \"name\": \"albin\",\n        \"age\": 15\n    },\n    {\n        \"name\": \"akash\",\n        \"age\": 17\n    },\n    {",
+        "detail": "filter_method",
+        "documentation": {}
+    },
+    {
+        "label": "get_voters",
+        "kind": 5,
+        "importPath": "filter_method",
+        "description": "filter_method",
+        "peekOfCode": "get_voters = [(a[\"name\"],\"your eligible\") if a[\"age\"]>=18 else (a[\"name\"],\"Your not eligible\") for a in ages]\nfor n,e in get_voters:\n    print(n,e)\ndef filter_fruits1(fruit):\n    return fruit[0].casefold() == \"p\"\ndef filter_fruits(fruit):\n    return len(fruit) >= 7\n# Recomended method\nfiltered = list(filter(filter_fruits, fruits))\n# print(filtered)",
+        "detail": "filter_method",
+        "documentation": {}
+    },
+    {
+        "label": "filtered",
+        "kind": 5,
+        "importPath": "filter_method",
+        "description": "filter_method",
+        "peekOfCode": "filtered = list(filter(filter_fruits, fruits))\n# print(filtered)\n# Not recomended logic\nfiltered1 = [ i for i in fruits if i[0].casefold() == \"p\" ]\n# print(filtered)\nfiltered = [ i if i[0].casefold() == \"p\" else \"Not p\" for i in fruits ]\n# print(filtered)\n# for i in fruits:\n#     if i[0].casefold() == \"p\":\n#         print(i)",
+        "detail": "filter_method",
+        "documentation": {}
+    },
+    {
+        "label": "filtered1",
+        "kind": 5,
+        "importPath": "filter_method",
+        "description": "filter_method",
+        "peekOfCode": "filtered1 = [ i for i in fruits if i[0].casefold() == \"p\" ]\n# print(filtered)\nfiltered = [ i if i[0].casefold() == \"p\" else \"Not p\" for i in fruits ]\n# print(filtered)\n# for i in fruits:\n#     if i[0].casefold() == \"p\":\n#         print(i)\n#     else:\n#         print(\"Not p\")",
+        "detail": "filter_method",
+        "documentation": {}
+    },
+    {
+        "label": "filtered",
+        "kind": 5,
+        "importPath": "filter_method",
+        "description": "filter_method",
+        "peekOfCode": "filtered = [ i if i[0].casefold() == \"p\" else \"Not p\" for i in fruits ]\n# print(filtered)\n# for i in fruits:\n#     if i[0].casefold() == \"p\":\n#         print(i)\n#     else:\n#         print(\"Not p\")",
+        "detail": "filter_method",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "kind": 5,
+        "importPath": "fmap",
+        "description": "fmap",
+        "peekOfCode": "request = type(\"request\", (), {\"url\": \"http://develop.onecare.com/api/v4/42/q?v=8#index\"})\nsubdomain = tldextract.extract(request.url)\n# subdomain = urlparse(request.url)\nprint(subdomain)",
+        "detail": "fmap",
+        "documentation": {}
+    },
+    {
+        "label": "subdomain",
+        "kind": 5,
+        "importPath": "fmap",
+        "description": "fmap",
+        "peekOfCode": "subdomain = tldextract.extract(request.url)\n# subdomain = urlparse(request.url)\nprint(subdomain)",
+        "detail": "fmap",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "for_loop",
+        "description": "for_loop",
+        "peekOfCode": "name = \"Inthu\"\nfor i in name:\n    print(i)\n# number as strings not integer\nname = \"78956\"\nfor i in name:\n    print(i)\n# for loops using range\nfinite = 101\n# for number in range(1, finite):",
+        "detail": "for_loop",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "for_loop",
+        "description": "for_loop",
+        "peekOfCode": "name = \"78956\"\nfor i in name:\n    print(i)\n# for loops using range\nfinite = 101\n# for number in range(1, finite):\n#     print(number)\n# # Sets\n# st = {\"apple\", \"mango\", \"orange\"}\n# for fruits in st:",
+        "detail": "for_loop",
+        "documentation": {}
+    },
+    {
+        "label": "finite",
+        "kind": 5,
+        "importPath": "for_loop",
+        "description": "for_loop",
+        "peekOfCode": "finite = 101\n# for number in range(1, finite):\n#     print(number)\n# # Sets\n# st = {\"apple\", \"mango\", \"orange\"}\n# for fruits in st:\n#     print(fruits)\n# # List\n# lst = [\"apple\", \"mango\", \"orange\"]\n# for fruits in lst:",
+        "detail": "for_loop",
+        "documentation": {}
+    },
+    {
+        "label": "get_args",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def get_args(name, age):\n    return f\"my name is {name} and I am {age} years old\"\n# Keyword Arguments (kwargs)\ndef get_args(name=None, age=None):\n    return f\"my name is {name} and I am {age} years old\"\n# When we have uncertainity about the inputs we get we use *args and **kwargs\n# Arguments (*args)\ndef get_args(*args):\n    return args\n# Arguments (**kwargs)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "get_args",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def get_args(name=None, age=None):\n    return f\"my name is {name} and I am {age} years old\"\n# When we have uncertainity about the inputs we get we use *args and **kwargs\n# Arguments (*args)\ndef get_args(*args):\n    return args\n# Arguments (**kwargs)\ndef get_kwargs(**kwargs):\n    return kwargs\n# example combination",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "get_args",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def get_args(*args):\n    return args\n# Arguments (**kwargs)\ndef get_kwargs(**kwargs):\n    return kwargs\n# example combination\ndef get_combination(name, age=25, *args, **kwargs):\n    return name, args, age, kwargs\n# args = get_args(\"albin\", \"anthony\", 25, True, \"hello\", 3.2)\n# kwargs = get_kwargs(fname=\"albin\", lname=\"anthony\", age=25, dveveloper=True, messsage=\"hello\", point=3.2)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "get_kwargs",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def get_kwargs(**kwargs):\n    return kwargs\n# example combination\ndef get_combination(name, age=25, *args, **kwargs):\n    return name, args, age, kwargs\n# args = get_args(\"albin\", \"anthony\", 25, True, \"hello\", 3.2)\n# kwargs = get_kwargs(fname=\"albin\", lname=\"anthony\", age=25, dveveloper=True, messsage=\"hello\", point=3.2)\ncomb = get_combination(\"albin\", \"Anthony\", distance=36)\n# print(comb)\n# addition (normal function)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "get_combination",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def get_combination(name, age=25, *args, **kwargs):\n    return name, args, age, kwargs\n# args = get_args(\"albin\", \"anthony\", 25, True, \"hello\", 3.2)\n# kwargs = get_kwargs(fname=\"albin\", lname=\"anthony\", age=25, dveveloper=True, messsage=\"hello\", point=3.2)\ncomb = get_combination(\"albin\", \"Anthony\", distance=36)\n# print(comb)\n# addition (normal function)\ndef addition(x, y):\n    ...\n    ...",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "addition",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def addition(x, y):\n    ...\n    ...\n    ...\n    ...\n    ...\n    ...\n    return x+y\n# add = addition(2, 5)\n# Anonymous function or lambda function addition",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "call_self",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def call_self(out):\n    if not out == 5:\n        out += 1\n        return call_self(out)\n    return out\nfinal = call_self(1)\n# print(final)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "comb",
+        "kind": 5,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "comb = get_combination(\"albin\", \"Anthony\", distance=36)\n# print(comb)\n# addition (normal function)\ndef addition(x, y):\n    ...\n    ...\n    ...\n    ...\n    ...\n    ...",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "anon",
+        "kind": 5,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "anon = lambda x, y: x+y\n# print(anon(2, 5))\n# recursion\ndef call_self(out):\n    if not out == 5:\n        out += 1\n        return call_self(out)\n    return out\nfinal = call_self(1)\n# print(final)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "final",
+        "kind": 5,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "final = call_self(1)\n# print(final)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "st1",
+        "kind": 5,
+        "importPath": "list_methods",
+        "description": "list_methods",
+        "peekOfCode": "st1 = {\"Apple\", \"Orange\", 2, \"Orange\"}\nst2 = {\"Apple\", \"Mango\", 1, \"Orange\", \"Orange\"}\nst3 = {1,2,3}\n# Adds an element\n# st1.add(2)\n# Clears the set\n# st.clear()\ndiff = st1.update(st3)\nprint(st1)",
+        "detail": "list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "st2",
+        "kind": 5,
+        "importPath": "list_methods",
+        "description": "list_methods",
+        "peekOfCode": "st2 = {\"Apple\", \"Mango\", 1, \"Orange\", \"Orange\"}\nst3 = {1,2,3}\n# Adds an element\n# st1.add(2)\n# Clears the set\n# st.clear()\ndiff = st1.update(st3)\nprint(st1)",
+        "detail": "list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "st3",
+        "kind": 5,
+        "importPath": "list_methods",
+        "description": "list_methods",
+        "peekOfCode": "st3 = {1,2,3}\n# Adds an element\n# st1.add(2)\n# Clears the set\n# st.clear()\ndiff = st1.update(st3)\nprint(st1)",
+        "detail": "list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "diff",
+        "kind": 5,
+        "importPath": "list_methods",
+        "description": "list_methods",
+        "peekOfCode": "diff = st1.update(st3)\nprint(st1)",
+        "detail": "list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "map_fruits",
+        "kind": 2,
+        "importPath": "map_method",
+        "description": "map_method",
+        "peekOfCode": "def map_fruits(fruit):\n    return {fruit[0]: fruit}\n# recomended method\nstart = perf_counter()\nmapped = list(map(map_fruits, fruits))\nprint(perf_counter()-start)\n# Python logic\nstart = perf_counter()\nmapped2 = [map_fruits(i) for i in fruits]\nprint(perf_counter()-start)",
+        "detail": "map_method",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "map_method",
+        "description": "map_method",
+        "peekOfCode": "fruits = [\"apple\", \"orange\", \"raspberry\", \"pineapple\", \"mango\", \"banana\", \"pomegreanate\", \"grapes\"]\ndef map_fruits(fruit):\n    return {fruit[0]: fruit}\n# recomended method\nstart = perf_counter()\nmapped = list(map(map_fruits, fruits))\nprint(perf_counter()-start)\n# Python logic\nstart = perf_counter()\nmapped2 = [map_fruits(i) for i in fruits]",
+        "detail": "map_method",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "map_method",
+        "description": "map_method",
+        "peekOfCode": "start = perf_counter()\nmapped = list(map(map_fruits, fruits))\nprint(perf_counter()-start)\n# Python logic\nstart = perf_counter()\nmapped2 = [map_fruits(i) for i in fruits]\nprint(perf_counter()-start)\n# Check length of items in a list\nmapped = list(map(lambda fruit: {fruit: len(fruit)}, fruits))\nprint(mapped)",
+        "detail": "map_method",
+        "documentation": {}
+    },
+    {
+        "label": "mapped",
+        "kind": 5,
+        "importPath": "map_method",
+        "description": "map_method",
+        "peekOfCode": "mapped = list(map(map_fruits, fruits))\nprint(perf_counter()-start)\n# Python logic\nstart = perf_counter()\nmapped2 = [map_fruits(i) for i in fruits]\nprint(perf_counter()-start)\n# Check length of items in a list\nmapped = list(map(lambda fruit: {fruit: len(fruit)}, fruits))\nprint(mapped)",
+        "detail": "map_method",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "map_method",
+        "description": "map_method",
+        "peekOfCode": "start = perf_counter()\nmapped2 = [map_fruits(i) for i in fruits]\nprint(perf_counter()-start)\n# Check length of items in a list\nmapped = list(map(lambda fruit: {fruit: len(fruit)}, fruits))\nprint(mapped)",
+        "detail": "map_method",
+        "documentation": {}
+    },
+    {
+        "label": "mapped2",
+        "kind": 5,
+        "importPath": "map_method",
+        "description": "map_method",
+        "peekOfCode": "mapped2 = [map_fruits(i) for i in fruits]\nprint(perf_counter()-start)\n# Check length of items in a list\nmapped = list(map(lambda fruit: {fruit: len(fruit)}, fruits))\nprint(mapped)",
+        "detail": "map_method",
+        "documentation": {}
+    },
+    {
+        "label": "mapped",
+        "kind": 5,
+        "importPath": "map_method",
+        "description": "map_method",
+        "peekOfCode": "mapped = list(map(lambda fruit: {fruit: len(fruit)}, fruits))\nprint(mapped)",
+        "detail": "map_method",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "operators",
+        "description": "operators",
+        "peekOfCode": "a = 1\nb = 1\n# # Equal to operator\n# print(f\"{a == b = }\")\n# # Not Equal to operator\n# print(f\"{a != b = }\")\n# # Greater than operator\n# print(f\"{a > b = }\")\n# # Less than operator\n# print(f\"{a < b = }\")",
+        "detail": "operators",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "operators",
+        "description": "operators",
+        "peekOfCode": "b = 1\n# # Equal to operator\n# print(f\"{a == b = }\")\n# # Not Equal to operator\n# print(f\"{a != b = }\")\n# # Greater than operator\n# print(f\"{a > b = }\")\n# # Less than operator\n# print(f\"{a < b = }\")\n# # Greater than or Equal to operator",
+        "detail": "operators",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "operators",
+        "description": "operators",
+        "peekOfCode": "a = 2\nb = 3\nc = 4\n# print(f\"{a <= b < c >= a = }\")\n# AND OR\n# print(f\"{(a < b) or (c < b < a) and (c >= a) = }\")",
+        "detail": "operators",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "operators",
+        "description": "operators",
+        "peekOfCode": "b = 3\nc = 4\n# print(f\"{a <= b < c >= a = }\")\n# AND OR\n# print(f\"{(a < b) or (c < b < a) and (c >= a) = }\")",
+        "detail": "operators",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "operators",
+        "description": "operators",
+        "peekOfCode": "c = 4\n# print(f\"{a <= b < c >= a = }\")\n# AND OR\n# print(f\"{(a < b) or (c < b < a) and (c >= a) = }\")",
+        "detail": "operators",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "prime",
+        "description": "prime",
+        "peekOfCode": "num = 13\n# To take input from the user\n#num = int(input(\"Enter a number: \"))\n# define a flag variable\nflag = False\nif num == 1:\n    print(num, \"is not a prime number\")\nelif num > 1:\n    # check for factors\n    for i in range(2, num):",
+        "detail": "prime",
+        "documentation": {}
+    },
+    {
+        "label": "#num",
+        "kind": 5,
+        "importPath": "prime",
+        "description": "prime",
+        "peekOfCode": "#num = int(input(\"Enter a number: \"))\n# define a flag variable\nflag = False\nif num == 1:\n    print(num, \"is not a prime number\")\nelif num > 1:\n    # check for factors\n    for i in range(2, num):\n        if (num % i) == 0:\n            # if factor is found, set flag to True",
+        "detail": "prime",
+        "documentation": {}
+    },
+    {
+        "label": "flag",
+        "kind": 5,
+        "importPath": "prime",
+        "description": "prime",
+        "peekOfCode": "flag = False\nif num == 1:\n    print(num, \"is not a prime number\")\nelif num > 1:\n    # check for factors\n    for i in range(2, num):\n        if (num % i) == 0:\n            # if factor is found, set flag to True\n            flag = True\n            # break out of loop",
+        "detail": "prime",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "scopes",
+        "description": "scopes",
+        "peekOfCode": "def add(num):\n    \"\"\"scope of var1 is global\"\"\"\n    var4 = 3\n    print(var4)\n# add(3)\n# print(var1)\nnum3 = 8\n# enclosing\ndef add_multiply(num1, num2):\n    num3 = num1 + num2",
+        "detail": "scopes",
+        "documentation": {}
+    },
+    {
+        "label": "add_multiply",
+        "kind": 2,
+        "importPath": "scopes",
+        "description": "scopes",
+        "peekOfCode": "def add_multiply(num1, num2):\n    num3 = num1 + num2\n    def multiply():\n        num1 = 5\n        num4 = num3 * num1 # num3 is an enclosing scope for multiply function\n        return num4\n    return multiply()\nfinal = add_multiply(2,3)\n# print(final)\n# Use globals() for checking global variable",
+        "detail": "scopes",
+        "documentation": {}
+    },
+    {
+        "label": "change_glob",
+        "kind": 2,
+        "importPath": "scopes",
+        "description": "scopes",
+        "peekOfCode": "def change_glob(num):\n    global glob\n    glob = num\n    print(f\"Printing global variable inside the function, output: {glob}\")\nchange_glob(10)\nprint(f\"\\n\\nPrinting global variable outside the function, output: {glob}\")",
+        "detail": "scopes",
+        "documentation": {}
+    },
+    {
+        "label": "var1",
+        "kind": 5,
+        "importPath": "scopes",
+        "description": "scopes",
+        "peekOfCode": "var1 = 1 # local scope for below print statement\n# print(var1)\n# var1 accessible only if the condituon is true\nif True:\n    var2 = 200\n# scope is local but it is set to last looped value\nfor something in range(200):\n    var3 = something\n# var4 is local to function and cannot be accessed from outside the scope of function\ndef add(num):",
+        "detail": "scopes",
+        "documentation": {}
+    },
+    {
+        "label": "num3",
+        "kind": 5,
+        "importPath": "scopes",
+        "description": "scopes",
+        "peekOfCode": "num3 = 8\n# enclosing\ndef add_multiply(num1, num2):\n    num3 = num1 + num2\n    def multiply():\n        num1 = 5\n        num4 = num3 * num1 # num3 is an enclosing scope for multiply function\n        return num4\n    return multiply()\nfinal = add_multiply(2,3)",
+        "detail": "scopes",
+        "documentation": {}
+    },
+    {
+        "label": "final",
+        "kind": 5,
+        "importPath": "scopes",
+        "description": "scopes",
+        "peekOfCode": "final = add_multiply(2,3)\n# print(final)\n# Use globals() for checking global variable\n# Use locals() for checking local variables\n# Changing global variable from a local scope\nglob = 5\ndef change_glob(num):\n    global glob\n    glob = num\n    print(f\"Printing global variable inside the function, output: {glob}\")",
+        "detail": "scopes",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 5,
+        "importPath": "scopes",
+        "description": "scopes",
+        "peekOfCode": "glob = 5\ndef change_glob(num):\n    global glob\n    glob = num\n    print(f\"Printing global variable inside the function, output: {glob}\")\nchange_glob(10)\nprint(f\"\\n\\nPrinting global variable outside the function, output: {glob}\")",
+        "detail": "scopes",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "statements",
+        "description": "statements",
+        "peekOfCode": "age = 18\n# if age >= 18:\n#     print(\"You can vote\") \n# elif age == 15:\n#     print(\"wait for 3 more years to vote\")\n# else:\n#     print(\"Not allowed\")\n# if (true statement):\n#     oper\n# if not (age >= 18):",
+        "detail": "statements",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "statements",
+        "description": "statements",
+        "peekOfCode": "age = 18\nexam = None\n# Logicall error\n# if age <= 28:\n#     exam = \"RCI\"\n# elif age <= 25:\n#     exam = \"sat\"\n# elif age <= 18:\n#     exam = \"gsat\"\n# else:",
+        "detail": "statements",
+        "documentation": {}
+    },
+    {
+        "label": "exam",
+        "kind": 5,
+        "importPath": "statements",
+        "description": "statements",
+        "peekOfCode": "exam = None\n# Logicall error\n# if age <= 28:\n#     exam = \"RCI\"\n# elif age <= 25:\n#     exam = \"sat\"\n# elif age <= 18:\n#     exam = \"gsat\"\n# else:\n#     exam =\"\"",
+        "detail": "statements",
+        "documentation": {}
+    },
+    {
+        "label": "country",
+        "kind": 5,
+        "importPath": "statements",
+        "description": "statements",
+        "peekOfCode": "country = \"India\"\nstate = \"Tamilnadu\"\ndistrict = \"Coimbatore\"\n# Normal Conditions\nif country.casefold() == \"india\":\n    if state.casefold() == \"tamilnadu\":\n        if district.casefold() == \"coimbatore\":\n            print(\"Hi nanba\")\n        else:\n            print(\"which district you are from\")",
+        "detail": "statements",
+        "documentation": {}
+    },
+    {
+        "label": "state",
+        "kind": 5,
+        "importPath": "statements",
+        "description": "statements",
+        "peekOfCode": "state = \"Tamilnadu\"\ndistrict = \"Coimbatore\"\n# Normal Conditions\nif country.casefold() == \"india\":\n    if state.casefold() == \"tamilnadu\":\n        if district.casefold() == \"coimbatore\":\n            print(\"Hi nanba\")\n        else:\n            print(\"which district you are from\")\n    else:",
+        "detail": "statements",
+        "documentation": {}
+    },
+    {
+        "label": "district",
+        "kind": 5,
+        "importPath": "statements",
+        "description": "statements",
+        "peekOfCode": "district = \"Coimbatore\"\n# Normal Conditions\nif country.casefold() == \"india\":\n    if state.casefold() == \"tamilnadu\":\n        if district.casefold() == \"coimbatore\":\n            print(\"Hi nanba\")\n        else:\n            print(\"which district you are from\")\n    else:\n        print(\"which state are you from\")",
+        "detail": "statements",
+        "documentation": {}
+    },
+    {
+        "label": "sample",
+        "kind": 5,
+        "importPath": "string_methods",
+        "description": "string_methods",
+        "peekOfCode": "sample = \" One-data {position} software solutions {name}\"\n# # method 1 Capitalize\n# c = sample.capitalize()\n# print(c)\n# # method 2 Casefold convert special caharacter to lowercase\n# c = sample.casefold()\n# print(c)\n# # method 3 center \n# c = sample.center(50, \"_\")\n# print(c)",
+        "detail": "string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "string_methods",
+        "description": "string_methods",
+        "peekOfCode": "c = sample.title()\nprint(c)\n# # method 29 zfill\n# c = sample.zfill(120)\n# print(c)",
+        "detail": "string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "snake_case_variable",
+        "kind": 5,
+        "importPath": "variables_naming",
+        "description": "variables_naming",
+        "peekOfCode": "snake_case_variable = \"I am a snake case variable\" # Snake case (naming variables, function definitions) Not for class definitions\nsnake_case_variable567 = \"I am a snake case variable\" # Snake case (naming variables)\nPascalCaseVariable = \"I am a Pascal case Variable\" # Pascal Case (defining classes or class definitions)\nPascalCaseVariable234 = \"I am a Pascal case Variable\" # Pascal Case (defining classes or class definitions)\n# not recomended for defining class with numbers at the end but can be used in situations like avoiding duplications\nUPPERCASE = \"I am a upper case variable\" # upper case (For defining constants)\n_test = \"test\"\n# Not Recommended naming conventions\ncamelCase = \"Not recomended\"\n# Not Allowed or naming conventions",
+        "detail": "variables_naming",
+        "documentation": {}
+    },
+    {
+        "label": "snake_case_variable567",
+        "kind": 5,
+        "importPath": "variables_naming",
+        "description": "variables_naming",
+        "peekOfCode": "snake_case_variable567 = \"I am a snake case variable\" # Snake case (naming variables)\nPascalCaseVariable = \"I am a Pascal case Variable\" # Pascal Case (defining classes or class definitions)\nPascalCaseVariable234 = \"I am a Pascal case Variable\" # Pascal Case (defining classes or class definitions)\n# not recomended for defining class with numbers at the end but can be used in situations like avoiding duplications\nUPPERCASE = \"I am a upper case variable\" # upper case (For defining constants)\n_test = \"test\"\n# Not Recommended naming conventions\ncamelCase = \"Not recomended\"\n# Not Allowed or naming conventions\n# @somevariable = \"Throws error\"",
+        "detail": "variables_naming",
+        "documentation": {}
+    },
+    {
+        "label": "PascalCaseVariable",
+        "kind": 5,
+        "importPath": "variables_naming",
+        "description": "variables_naming",
+        "peekOfCode": "PascalCaseVariable = \"I am a Pascal case Variable\" # Pascal Case (defining classes or class definitions)\nPascalCaseVariable234 = \"I am a Pascal case Variable\" # Pascal Case (defining classes or class definitions)\n# not recomended for defining class with numbers at the end but can be used in situations like avoiding duplications\nUPPERCASE = \"I am a upper case variable\" # upper case (For defining constants)\n_test = \"test\"\n# Not Recommended naming conventions\ncamelCase = \"Not recomended\"\n# Not Allowed or naming conventions\n# @somevariable = \"Throws error\"\n# 2some_variable  = \"Throws error\"",
+        "detail": "variables_naming",
+        "documentation": {}
+    },
+    {
+        "label": "PascalCaseVariable234",
+        "kind": 5,
+        "importPath": "variables_naming",
+        "description": "variables_naming",
+        "peekOfCode": "PascalCaseVariable234 = \"I am a Pascal case Variable\" # Pascal Case (defining classes or class definitions)\n# not recomended for defining class with numbers at the end but can be used in situations like avoiding duplications\nUPPERCASE = \"I am a upper case variable\" # upper case (For defining constants)\n_test = \"test\"\n# Not Recommended naming conventions\ncamelCase = \"Not recomended\"\n# Not Allowed or naming conventions\n# @somevariable = \"Throws error\"\n# 2some_variable  = \"Throws error\"\n#  some_variable = \"Throws error\"",
+        "detail": "variables_naming",
+        "documentation": {}
+    },
+    {
+        "label": "UPPERCASE",
+        "kind": 5,
+        "importPath": "variables_naming",
+        "description": "variables_naming",
+        "peekOfCode": "UPPERCASE = \"I am a upper case variable\" # upper case (For defining constants)\n_test = \"test\"\n# Not Recommended naming conventions\ncamelCase = \"Not recomended\"\n# Not Allowed or naming conventions\n# @somevariable = \"Throws error\"\n# 2some_variable  = \"Throws error\"\n#  some_variable = \"Throws error\"\n# some, variable = \"Throws error\"",
+        "detail": "variables_naming",
+        "documentation": {}
+    },
+    {
+        "label": "_test",
+        "kind": 5,
+        "importPath": "variables_naming",
+        "description": "variables_naming",
+        "peekOfCode": "_test = \"test\"\n# Not Recommended naming conventions\ncamelCase = \"Not recomended\"\n# Not Allowed or naming conventions\n# @somevariable = \"Throws error\"\n# 2some_variable  = \"Throws error\"\n#  some_variable = \"Throws error\"\n# some, variable = \"Throws error\"",
+        "detail": "variables_naming",
+        "documentation": {}
+    },
+    {
+        "label": "camelCase",
+        "kind": 5,
+        "importPath": "variables_naming",
+        "description": "variables_naming",
+        "peekOfCode": "camelCase = \"Not recomended\"\n# Not Allowed or naming conventions\n# @somevariable = \"Throws error\"\n# 2some_variable  = \"Throws error\"\n#  some_variable = \"Throws error\"\n# some, variable = \"Throws error\"",
+        "detail": "variables_naming",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "while_loops",
+        "description": "while_loops",
+        "peekOfCode": "start = 0\nname = 'inthu0'\n# print(cond)\n# while name != \"inthu10\":\n#     print(\"the name is \", name)\n#     start += 1\n#     name = \"\".join([i for i in name][:5])\n#     name = name + str(start)\ncond = name == \"inthu10\"\n# print(cond) = False",
+        "detail": "while_loops",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "while_loops",
+        "description": "while_loops",
+        "peekOfCode": "name = 'inthu0'\n# print(cond)\n# while name != \"inthu10\":\n#     print(\"the name is \", name)\n#     start += 1\n#     name = \"\".join([i for i in name][:5])\n#     name = name + str(start)\ncond = name == \"inthu10\"\n# print(cond) = False\nwhile not cond:",
+        "detail": "while_loops",
+        "documentation": {}
+    },
+    {
+        "label": "cond",
+        "kind": 5,
+        "importPath": "while_loops",
+        "description": "while_loops",
+        "peekOfCode": "cond = name == \"inthu10\"\n# print(cond) = False\nwhile not cond:\n    start += 1\n    name = \"\".join([i for i in name][:5])\n    name = name + str(start)\n    if name.casefold() == \"inthu10\":\n        break\n# start = 10 \n# for i in range(start):",
+        "detail": "while_loops",
+        "documentation": {}
+    }
+]
