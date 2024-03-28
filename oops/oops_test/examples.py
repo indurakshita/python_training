@@ -118,6 +118,103 @@ that inherit from Animal and add methods for making their respective sounds.'''
 
 # c = Cat("cat","meow") 
 # print(c)
+
+#--------------------------------------------------------------------------
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+    def __init__(self, registration_number, make, model, year, color):
+        self.registration_number = registration_number
+        self.make = make
+        self.model = model
+        self.year = year
+        self.color = color
+
+    @abstractmethod
+    def display_details(self):
+        pass
+
+class Car(Vehicle):
+    def __init__(self, registration_number, make, model, year, color, num_doors):
+        super().__init__(registration_number, make, model, year, color)
+        self.num_doors = num_doors
+
+    def display_details(self):
+        print("Car Details:")
+        print("Registration Number:", self.registration_number)
+        print("Make:", self.make)
+        print("Model:", self.model)
+        print("Year:", self.year)
+        print("Color:", self.color)
+        print("Number of Doors:", self.num_doors)
+    
+    def __str__(self):
+        return f"Car: {self.make} {self.model} ({self.year})"
+
+class Motorcycle(Vehicle):
+    def __init__(self, registration_number, make, model, year, color, has_sidecar):
+        super().__init__(registration_number, make, model, year, color)
+        self.has_sidecar = has_sidecar
+
+    def display_details(self):
+        print("Motorcycle Details:")
+        print("Registration Number:", self.registration_number)
+        print("Make:", self.make)
+        print("Model:", self.model)
+        print("Year:", self.year)
+        print("Color:", self.color)
+        if self.has_sidecar:
+            print("Has Sidecar: Yes")
+        else:
+            print("Has Sidecar: No")
+
+class ParkingLot:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.vehicles = []
+
+    def park_vehicle(self, vehicle):
+        
+        if len(self.vehicles) < self.capacity:
+            print(vehicle)
+            self.vehicles.append(vehicle)
+            print("Vehicle parked successfully.")
+        else:
+            print("Parking lot is full. Cannot park the vehicle.")
+
+    def remove_vehicle(self, registration_number):
+        for vehicle in self.vehicles:
+            if vehicle.registration_number == registration_number:
+                self.vehicles.remove(vehicle)
+                print("Vehicle with registration number", registration_number, "removed from the parking lot.")
+                return
+        print("Vehicle with registration number", registration_number, "not found in the parking lot.")
+
+    def display_parked_vehicles(self):
+        print("Vehicles parked in the parking lot:")
+        for vehicle in self.vehicles:
+            vehicle.display_details()
+
+
+car1 = Car("ABC123", "Toyota", "Camry", 2020, "Red", 4)
+motorcycle1 = Motorcycle("XYZ789", "Honda", "CBR500R", 2019, "Black", False)
+
+
+# car1.display_details()
+# print("-----------------------")
+# motorcycle1.display_details()
+parking_lot = ParkingLot(2)
+parking_lot.park_vehicle(car1)
+# parking_lot.park_vehicle(motorcycle1)
+
+
+parking_lot.display_parked_vehicles()
+
+# parking_lot.remove_vehicle("ABC123")
+# parking_lot.remove_vehicle("XYZ789")
+
+# parking_lot.display_parked_vehicles()
+
         
         
 
